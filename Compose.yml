@@ -3,6 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: workoutcool
+    restart: unless-stopped
     networks:
       - proxy
       
