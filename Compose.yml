@@ -1,0 +1,12 @@
+services:
+  workout_cool:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - proxy
+      
+networks:
+  proxy:
+    name: proxy
+    external: true
